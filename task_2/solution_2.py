@@ -1,4 +1,8 @@
-# your code here
-user_input = input()
-# your code here
-print(most_frequent_character)
+inp = str(input())
+mfchar = str()
+mfcount = 0
+for char in inp:
+  if inp.count(char) > mfcount:
+    mfchar = char
+    mfcount = inp.count(char)
+print(mfchar)
